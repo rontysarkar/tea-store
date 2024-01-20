@@ -19,7 +19,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gra-start': '#da373d',
+                'gra-end': '#da373d',
               }
             }
           }
@@ -29,13 +30,14 @@
         .manrope-font{
             font-family: 'Manrope', sans-serif;
         }
+        
     </style>
   </head>
-  <body class="manrope-font">
+  <body class="manrope-font ">
     <header class="container mx-auto  ">
-        <div class="hero ">
-            <div class="hero-content flex-col lg:flex-row">             
-              <div>
+        <div class="">
+            <div class="flex justify-between  items-center flex-col lg:flex-row">             
+              <div >
                 <h1 class="text-4xl lg:text-7xl font-extrabold">It's good <br> 
                     tea time at The
                      <br> Tea House</h1>
@@ -43,7 +45,7 @@
                 <button class="btn btn-primary">Explore More</button>
               </div>
               <div>
-              <img src="./images/banner.png" class="max-w-sm  " />
+              <img src="./images/banner.png" class=" " />
               
                 <div class="-mt-14 flex gap-4 drop-shadow-lg rounded-md items-center w-52 py-2 pl-4 bg-white">
                     <div>
@@ -128,8 +130,9 @@
                 </div>
             </div>
         </section>
-        <section class="py-24 flex flex-col md:flex-row gap-12 bg-gradient-to-r from-orange-500 to-red-500 ... px-16 py-24">
-            <div>
+        <section class="py-24 flex flex-col md:flex-row gap-12 bg-gradient-to-r from-orange-500 to-red-500 ... lg:px-16 py-24">
+           <div class="flex items-center ">
+            <div class="lg:pr-32">
                 <h1 class="text-5xl text-white font-extrabold">
                     Meet Our Super <br>
                      Clients
@@ -137,11 +140,12 @@
                 <p class="text-zinc-100 my-7  ">
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
                 </p>
-                <button class="btn btn-primary">Show All</button>
+                <button class=" bg-white px-6 py-3 rounded-lg text-red-400">Show All</button>
             </div>
-            <div>
-                <div class="relative p-12 bg-white ">
-                    <img class="absolute -left-6 -top-6" src="./images/client.png" alt="">
+           </div>
+            <div class="relative">
+                <div class="relative z-10 opacity-50 mb-14 p-12  bg-white ">
+                    <img class="absolute -left-6 -top-6 border-4 border-white rounded-full bg-white" src="./images/client.png" alt="">
                     <p class="mb-3">
                         We are providing the best and suitable home insurance services for the people who are interested to treatment
                     </p>
@@ -149,14 +153,126 @@
                         Ilham Yuda
                     </h3>
                     <h2>Businessman</h2>
+                    <div class="flex justify-end">
+                        <img src="./images/circles.png" alt="">
+                    </div>
+                </div>
+                <div class="absolute z-20 top-32 lg:-left-32 lg:w-[470px] p-12  bg-white ">
+                    <img class="absolute -left-6 -top-6 border-4 border-white rounded-full bg-white" src="./images/client.png" alt="">
+                    <p class="mb-3">
+                        We are providing the best and suitable home insurance services for the people who are interested to treatment
+                    </p>
+                    <h3 class="font-bold mb-2">
+                        Ilham Yuda
+                    </h3>
+                    <h2>Businessman</h2>
+                    <div class="flex justify-end">
+                        <img src="./images/circles.png" alt="">
+                    </div>
+                </div>
+                <div class="relative z-10 p-12 opacity-50 bg-white ">
+                    <img class="absolute -left-6 -top-6 border-4 border-white rounded-full bg-white" src="./images/client.png" alt="">
+                    <p class="mb-3">
+                        We are providing the best and suitable home insurance services for the people who are interested to treatment
+                    </p>
+                    <h3 class="font-bold mb-2">
+                        Ilham Yuda
+                    </h3>
+                    <h2>Businessman</h2>
+                    <div class="flex justify-end">
+                        <img src="./images/circles.png" alt="">
+                    </div>
                 </div>
             </div>
 
         </section>
+        <section class="py-24 text-center">
+            <h1 class="text-5xl font-extrabold"> News & Events</h1>
+            <p class="lg:w-[900px] mx-auto mt-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            <div class="grid gap-6 lg:px-40 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class=" w-[90%] card border-2 pt-4 mt-12 card-compact bg-base-100 shadow-xl text-left">
+                    <figure><img src="./images/news-1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                     <div class="px-4 space-y-4">
+                        <p class=" ">Feb 05, 2027</p>
+                      <h2 class="card-title">Collecting 8 points for discount</h2>
+                      <p>There are many variations of passages of Lorem Ipsum available.</p>
+                      <h1 class="font-bold">Learn More</h1>
+                     </div>
+                    </div>
+                  </div> 
+                <div class="w-[90%] card border-2 pt-4 mt-12 card-compact bg-base-100 shadow-xl text-left">
+                    <figure><img src="./images/news-2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                     <div class="px-4 space-y-4">
+                        <p class=" ">Feb 05, 2027</p>
+                      <h2 class="card-title">Collecting 8 points for discount</h2>
+                      <p>There are many variations of passages of Lorem Ipsum available.</p>
+                      <h1 class="font-bold">Learn More</h1>
+                     </div>
+                    </div>
+                  </div> 
+                <div class="w-[90%] card border-2 pt-4 mt-12 card-compact bg-base-100 shadow-xl text-left">
+                    <figure><img src="./images/news-3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                     <div class="px-4 space-y-4">
+                        <p class=" ">Feb 05, 2027</p>
+                      <h2 class="card-title">Collecting 8 points for discount</h2>
+                      <p>There are many variations of passages of Lorem Ipsum available.</p>
+                      <h1 class="font-bold">Learn More</h1>
+                     </div>
+                    </div>
+                  </div> 
+                
+            </div>
+        </section>
         
     </main>
-    <footer>
-
-    </footer>
+    <footer class=" lg:px-60 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between mb-10 lg:pr-52">
+            <img src="./images/cup.png" alt="">
+            <div class="flex items-center space-x-4">
+                <h1>Ready to get strated?</h1>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+        <div class="footer">
+            <nav>
+                <header class="footer-title ">Quick Links</header> 
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Insurance</a>
+                <a class="link link-hover">Privacy Policy</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Our Service</header> 
+                <a class="link link-hover">Life Insurance</a>
+                <a class="link link-hover">Car Insurance</a>
+                <a class="link link-hover">Health Insurance</a>
+                <a class="link link-hover">House Insurance</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Help</header> 
+                <a class="link link-hover">FAQs</a>
+                <a class="link link-hover">Contact Us</a>
+                
+              </nav> 
+              <form>
+                <header class="footer-title">Subscribe to our newsletterr</header> 
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label> 
+                  <div class="join">
+                    <input type="text" placeholder="username@site.com" class=" bg-transparent border-b-2 border-black mr-4" /> 
+                    <button class="btn btn-primary rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+        <aside class="mt-10 text-center">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+          </aside>
+      </footer>
   </body>
 </html>
